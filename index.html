@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Мастер Мария: перманентный макияж, ламинирование бровей и ресниц, удаление ПМ и татуировок, процедуры для кожи. Предварительный макет сайта.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#f7f6f0">
+  <title>Мария — перманентный макияж и эстетика</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#services">Перейти к услугам</a>
+  <div class="preview-note">Макет для знакомства <span>·</span> Цены и наполнение предварительные</div>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="wordmark" href="#home" aria-label="Мария — на главную">мария<span>ПЕРМАНЕНТ И ЭСТЕТИКА</span></a>
+      <nav class="desktop-nav" aria-label="Основная навигация"><a href="#services">Услуги и цены</a><a href="#about">О мастере</a><a href="#works">Работы</a><a href="#questions">Вопросы</a></nav>
+      <button class="button button-small header-book" data-book>Связаться с Марией</button>
+      <button class="menu-button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+    </div>
+    <nav id="mobile-menu" class="mobile-menu" aria-label="Мобильная навигация" hidden><a href="#services">Услуги и цены</a><a href="#about">О мастере</a><a href="#works">Работы</a><a href="#questions">Вопросы</a><a href="#contacts">Контакты</a></nav>
+  </header>
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">ЧАСТНЫЙ МАСТЕР · МАРИЯ</p>
+        <h1>Красота<br> в деталях.<br> <em>И в вас.</em></h1>
+        <p class="hero-description">Перманентный макияж, брови, ресницы<br class="desktop-break"> и эстетические процедуры.<br> Внимание к тому, что важно именно вам.</p>
+        <div class="hero-actions"><a class="button" href="#services">Выбрать услугу</a><button class="text-button" data-book>Задать вопрос</button></div>
+        <p class="hero-footnote">Знакомство с мастером начинается с разговора</p>
+      </div>
+      <figure class="hero-portrait">
+        <div class="portrait-backing" aria-hidden="true"></div>
+        <img src="assets/maria.png" width="640" height="640" alt="Мария в своём рабочем кабинете" fetchpriority="high">
+        <figcaption><span class="portrait-name">Мария</span><span>Ваш мастер<br> перманента и эстетики</span></figcaption>
+        <span class="portrait-side" aria-hidden="true">ВНИМАНИЕ К КАЖДОЙ ДЕТАЛИ</span>
+      </figure>
+    </section>
+    <div class="intro-strip"><div class="container"><span>Подчеркнуть естественное</span><i aria-hidden="true">✳</i><span>Обновить привычное</span><i aria-hidden="true">✳</i><span>Выбрать своё</span></div></div>
+
+    <section class="section container services" id="services" aria-labelledby="services-title">
+      <div class="section-heading"><div><p class="eyebrow">ПРОСТО НАЙТИ СВОЁ</p><h2 id="services-title">Что вам <em>ближе?</em></h2></div><p class="section-intro">Все направления — в одном месте.<br> Откройте услугу, чтобы узнать подробнее.</p></div>
+      <div class="filters" role="group" aria-label="Фильтр услуг"><button class="filter active" data-filter="all" aria-pressed="true">Все услуги</button><button class="filter" data-filter="pm" aria-pressed="false">Перманент</button><button class="filter" data-filter="brows" aria-pressed="false">Брови и ресницы</button><button class="filter" data-filter="removal" aria-pressed="false">Удаление</button><button class="filter" data-filter="skin" aria-pressed="false">Для кожи</button></div>
+      <div class="price-caption"><span>УСЛУГА</span><span>ПРИМЕР СТОИМОСТИ</span></div>
+      <div id="service-list"></div>
+      <noscript><p>Для интерактивного каталога включите JavaScript. Направления: перманентный макияж, ламинирование ресниц и бровей, халяль ламинирование / осветление, удаление ПМ лазером / ремувером, удаление татуировок, карбоновый пилинг, осветление пигментации.</p></noscript>
+      <div class="service-bottom"><p>Цены указаны для макета и ещё не утверждены Марией.<br> Состав, длительность и итоговая стоимость уточняются перед записью.</p><button class="text-button" data-book="Помощь с выбором услуги">Помогите с выбором</button></div>
+    </section>
+
+    <section class="about-section" id="about" aria-labelledby="about-title"><div class="container about-layout">
+      <div><p class="eyebrow">ДАВАЙТЕ ЗНАКОМИТЬСЯ</p><h2 id="about-title">Ваш мастер —<br> <em>Мария.</em></h2><div class="signature" aria-hidden="true">Мария</div></div>
+      <div class="about-copy"><p class="about-lead">За каждой процедурой —<br> человек, которому вы доверяете.</p><p>Перманентный макияж, работа с бровями и ресницами, удаление нежелательного пигмента и эстетические процедуры — направления, с которыми работает Мария.</p><p>Можно начать с простого сообщения: рассказать о пожеланиях, уточнить детали и выбрать подходящую услугу вместе с мастером.</p><a class="text-button" href="#contacts">Познакомиться в переписке</a></div>
+    </div></section>
+
+    <section class="section container" id="works" aria-labelledby="works-title">
+      <div class="section-heading"><div><p class="eyebrow">ДЕТАЛИ, КОТОРЫЕ ВАЖНЫ</p><h2 id="works-title">Место для <em>результатов.</em></h2></div><p class="section-intro">Здесь появятся настоящие работы Марии.<br> Пока — места для фотографий.</p></div>
+      <div class="works-grid"><figure class="work"><div class="photo-placeholder"><span>Фото</span><small>ПЕРМАНЕНТНЫЙ МАКИЯЖ</small></div><figcaption><h3>Мягкий акцент</h3><p>Перманентный макияж</p></figcaption></figure><figure class="work"><div class="photo-placeholder tone-two"><span>Фото</span><small>БРОВИ И РЕСНИЦЫ</small></div><figcaption><h3>Выразительный взгляд</h3><p>Ламинирование</p></figcaption></figure><figure class="work"><div class="photo-placeholder tone-three"><span>Фото</span><small>ДО / ПОСЛЕ</small></div><figcaption><h3>История изменений</h3><p>Удаление ПМ и татуировок</p></figcaption></figure></div>
+    </section>
+
+    <section class="process-section"><div class="container"><div class="section-heading"><div><p class="eyebrow">БЕЗ ЛИШНИХ ШАГОВ</p><h2>От выбора —<br> <em>к знакомству.</em></h2></div><p class="section-intro">Запись начинается в удобном мессенджере.<br> Без регистрации и длинных анкет.</p></div><div class="process-grid"><article><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M10 7h20v27H10zM15 14h10M15 20h10M15 26h6"/></svg><h3>Выберите услугу</h3><p>Посмотрите направления и раскройте интересующие подробности.</p></article><article><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M7 8h26v20H17l-8 6v-6H7zM13 15h14M13 21h9"/></svg><h3>Напишите Марии</h3><p>Задайте вопросы или расскажите, какой результат хотите получить.</p></article><article><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M8 10h24v24H8zM8 17h24M14 6v8M26 6v8M14 25l4 4 8-8"/></svg><h3>Договоритесь о встрече</h3><p>Уточните стоимость, подготовку и удобное время непосредственно у мастера.</p></article></div></div></section>
+
+    <section class="section container faq-layout" id="questions" aria-labelledby="faq-title"><div><p class="eyebrow">ПЕРЕД ЗНАКОМСТВОМ</p><h2 id="faq-title">Возможно,<br> вы <em>спросите.</em></h2><p class="faq-intro">Остальное можно спокойно<br> обсудить с Марией.</p><button class="text-button" data-book>Задать свой вопрос</button></div><div class="faq-list">
+      <details><summary>Не знаю, какую услугу выбрать<span class="plus" aria-hidden="true"></span></summary><p>Начните с сообщения мастеру. Расскажите, что хочется изменить или подчеркнуть. Необязательно заранее разбираться в названиях процедур.</p></details>
+      <details><summary>Что входит в стоимость?<span class="plus" aria-hidden="true"></span></summary><p>В каждой услуге есть предварительное описание. Точный состав и цену Мария подтвердит перед записью. Для перманентного макияжа отдельно уточните условия и стоимость коррекции.</p></details>
+      <details><summary>Можно ли обсудить старый перманент?<span class="plus" aria-hidden="true"></span></summary><p>Да, среди направлений есть удаление ПМ лазером и ремувером. Подходящий способ и план работы нужно обсудить с мастером — выбирать метод самостоятельно не требуется.</p></details>
+      <details><summary>Принимаете мужчин на удаление татуировок?<span class="plus" aria-hidden="true"></span></summary><p>Да. Направление удаления татуировок доступно и мужчинам. Укажите в сообщении расположение и примерный размер татуировки, чтобы начать обсуждение.</p></details>
+      <details><summary>Как подготовиться к посещению?<span class="plus" aria-hidden="true"></span></summary><p>Подготовка зависит от выбранной процедуры. Заранее уточните у Марии ограничения и рекомендации, а также сообщите о важных особенностях здоровья.</p></details>
+    </div></section>
+
+    <section class="contact-section" id="contacts" aria-labelledby="contact-title"><div class="container contact-layout"><div><p class="eyebrow">НАЧНЁМ С РАЗГОВОРА</p><h2 id="contact-title">Один шаг<br> <em>к вашему решению.</em></h2><p>Напишите Марии — о процедуре,<br> своих пожеланиях или удобном времени.</p></div><div class="contact-card"><h3>Как вам удобнее?</h3><button class="messenger" data-channel="telegram"><span class="channel-icon" aria-hidden="true">тг</span><span>Telegram<small>Ссылка будет добавлена</small></span><span class="channel-end" aria-hidden="true">+</span></button><button class="messenger" data-channel="whatsapp"><span class="channel-icon" aria-hidden="true">wa</span><span>WhatsApp<small>Ссылка будет добавлена</small></span><span class="channel-end" aria-hidden="true">+</span></button><div class="contact-meta"><span>Телефон</span><button class="plain-button" data-channel="phone">Номер будет добавлен</button></div><div class="contact-meta"><span>Кабинет</span><span>Город и адрес уточняются</span></div></div></div></section>
+  </main>
+  <footer class="container footer"><div class="footer-top"><a class="wordmark" href="#home">мария<span>ПЕРМАНЕНТ И ЭСТЕТИКА</span></a><p>Красота начинается с внимания к себе.</p><button class="text-button" data-social>Социальные сети</button></div><div class="footer-bottom"><span>© <span id="year">2026</span> Мастер Мария</span><span>Предварительный макет · не является предложением услуг</span></div></footer>
+  <div class="mobile-book"><a href="#services">Услуги и цены</a><button class="button button-small" data-book>Написать Марии</button></div>
+
+  <dialog id="booking-dialog" aria-labelledby="booking-title"><button class="dialog-close" aria-label="Закрыть окно">×</button><p class="eyebrow">ЛИЧНОЕ ОБЩЕНИЕ</p><h2 id="booking-title">Напишите <em>Марии.</em></h2><p class="dialog-intro">Можно начать с готового сообщения<br> или написать своими словами.</p><label class="message-label" for="booking-message">ВАШЕ СООБЩЕНИЕ</label><textarea id="booking-message" rows="4"></textarea><button class="text-button copy-message">Скопировать сообщение</button><div class="dialog-channels"><button class="button" data-channel="telegram">Telegram</button><button class="button button-outline" data-channel="whatsapp">WhatsApp</button></div><p class="dialog-notice" role="status" aria-live="polite">Это макет. Контакты Марии ещё не добавлены, сообщения никуда не отправляются.</p></dialog>
+  <div class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
